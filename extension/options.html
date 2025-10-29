@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تنظیمات افزونه</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>تنظیمات افزونه</h1>
+    </header>
+    
+    <main class="main-content">
+      <div class="setting-item">
+        <label for="enabled">
+          <input type="checkbox" id="enabled">
+          فعال کردن افزونه
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <label for="theme">تم:</label>
+        <select id="theme">
+          <option value="default">پیش‌فرض</option>
+          <option value="dark">تیره</option>
+          <option value="light">روشن</option>
+        </select>
+      </div>
+
+      <button id="saveBtn" class="save-button">ذخیره تنظیمات</button>
+      
+      <div id="status" class="status-message"></div>
+    </main>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
